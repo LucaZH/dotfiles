@@ -30,6 +30,9 @@ for_window [window_role="task_dialog"] floating enable
 for_window [class="xdman-Main"] floating enable
 floating_modifier $mod
 tiling_drag modifier titlebar
+
+bindsym $mod+q exec nautilus
+
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
