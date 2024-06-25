@@ -27,7 +27,7 @@ window {
     text-color:                     @fg;
 	border:							0px 0px 0px 0px;
 	border-color:					@ac;
-    border-radius:                  0px;
+    border-radius:                  15px;
 	width:							350px;
     location:                       center;
     x-offset:                       0;
@@ -87,7 +87,7 @@ listview {
 mainbox {
     background-color:               @al;
 	border:							0px;
-    border-radius:                  0px;
+    border-radius:                  15px;
 	border-color:					@ac;
     children:                       [ inputbar, listview ];
     spacing:                       	5px;
