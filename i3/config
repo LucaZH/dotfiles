@@ -6,12 +6,14 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
-exec --no-startup-id bash ~/.config/polybar/launch.sh --forest
+exec_always bash ~/.config/polybar/launch.sh --forest 
 exec_always compton
 exec_always nitrogen --restore
 exec_always python3 /home/beru/.config/i3/script/mouse.py
+exec_always libinput-gestures-setup start
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 bindsym Print exec --no-startup-id flameshot gui
+
 set $refresh_i3status killall -SIGUSR1 i3status
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
