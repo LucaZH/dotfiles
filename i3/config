@@ -10,7 +10,6 @@ exec_always bash ~/.config/polybar/launch.sh --forest
 exec_always compton
 exec_always nitrogen --restore
 exec_always python3 /home/beru/.config/i3/script/mouse.py
-exec_always libinput-gestures-setup start
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 bindsym Print exec --no-startup-id flameshot gui
 
